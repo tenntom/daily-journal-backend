@@ -9,10 +9,10 @@ export const Entry = ({ entry, moods }) => {
   return (
 
     <section className="entry">
-      <div className="entry__concept">{entry.concept}</div>
+      <div className="entry__concept">{entry.concepts}</div>
       <div className="entry__entry">{entry.entry}</div>
-      <div className="entry__date">{entry.date}</div>
-      <div className="entry__mood">{mood.label}</div>
+      <div className="entry__date">{entry.time}</div>
+      <div className="entry__mood">{entry.mood_id}</div>
 
       <button onClick={
         () => {
